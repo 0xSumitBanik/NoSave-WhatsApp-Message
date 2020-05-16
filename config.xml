@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.nosave.application" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NoSave</name>
+    <description>
+        Send WhatsApp message without saving someone's phone number.
+    </description>
+    <author email="sumitbanik02@gmail.com" href="#">
+        Sumit Banik
+    </author>
+    <icon src="www/img/icon.png" />
+    <content src="splashscreen.html" />
+    <access origin="*" />
+    <preference name="StatusBarBackgroundColor" value="#128C7E"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-network-information" spec="~2.0.2" />
+</widget>
+

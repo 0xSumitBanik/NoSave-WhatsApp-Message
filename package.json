@@ -1,0 +1,35 @@
+{
+  "name": "com.nosave.application",
+  "displayName": "NoSave Messaging",
+  "version": "1.0.0",
+  "description": "Send WhatsApp message without saving someone's phone number.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Sumit Banik",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-plugin-exitapp2": "^1.0.4",
+    "cordova-plugin-network-information": "^2.0.2",
+    "cordova-plugin-statusbar": "^2.4.3"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-statusbar": {},
+      "kr.co.joycorp.cordova.exitapp": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

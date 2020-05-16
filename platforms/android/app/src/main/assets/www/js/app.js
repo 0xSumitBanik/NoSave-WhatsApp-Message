@@ -1,0 +1,5 @@
+sendMessage=()=>{let country_code=document.querySelector("#country_code").value;let phone_number=document.querySelector("#phone_number").value;if(country_code=='')
+document.querySelector("#country_code").style.borderBottom="solid 1px red";else document.querySelector("#country_code").style.borderBottom="1px solid #9e9e9e";if(phone_number==''||phone_number.length<10){document.querySelector('#phone_number_error_message').style.visibility='visible';document.querySelector("#phone_number").style.borderBottom="solid 1px red"}else{document.querySelector('#phone_number_error_message').style.visibility='hidden';document.querySelector("#phone_number").style.borderBottom="1px solid #9e9e9e"}
+let mobile_number_with_country_code=parseInt(country_code+phone_number);let message=document.querySelector("#message").value.trim();const url=`https://api.whatsapp.com/send?phone=${mobile_number_with_country_code}&text=${message}`;if(country_code!=""&&phone_number.length==10)
+window.open(url,'_parent')
+else return!1}
